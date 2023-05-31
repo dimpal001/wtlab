@@ -14,20 +14,20 @@
 <body>
     <div class="container d-flex justify-content-center align-items-center">
         <div class="form-box">
-            <form action="">
+            <form id="form" action="">
                 <div class="row">
                     <h3>Web Technology</h3>
                     <h5>Lab report</h5>
                 </div>
                 <div class="row">
-                    <div class="col-12"><input type="text" class="name-input" placeholder="Full Name"></div>
+                    <div class="col-12"><input type="text" name="" class="name-input" required placeholder="Full Name"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><input type="text" class="roll-input" placeholder="Roll Number"></div>
+                    <div class="col-12"><input type="text" name="" class="roll-input" required placeholder="Roll Number"></div>
                 </div>
                 <div class="row">
                     <div class="mb-3">
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" name="" type="file" required id="formFile">
                     </div>
                 </div>
                 <div class="row">
@@ -36,7 +36,13 @@
             </form>
         </div>
     </div>
+    <script>
+        let form = document.getElementById('form')
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
 
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
