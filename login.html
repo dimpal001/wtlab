@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Lab Report</title>
-
+    
 </head>
 
 <body>
@@ -18,38 +18,26 @@
             <form id="form" action="">
                 <div class="row">
                     <h2 align="center">Cipher</h2>
-                    <h5 align="center">Welcome to Cipher</h5>
+                    <h5 align="center">Login to Cipher</h5>
                 </div>
                 <div class="row">
-                    <p>We are thrilled to invite you to Cipher, the technological extravaganza organized by the IT
-                        Department of the School of Technology in NEHU. Cipher is a platform that brings together
-                        students, tech enthusiasts, and aspiring engineers from across the region to showcase their
-                        skills, ignite their creativity, and embrace the wonders of technology.<br><br>
-
-                        At Cipher, we believe in the power of innovation and the limitless possibilities that technology
-                        holds. Through a range of exciting events, competitions, games, quizzes, and coding challenges,
-                        we strive to create an environment that nurtures curiosity, fosters learning, and encourages
-                        participants to push their boundaries.</p>
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Email"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><button id="register">Registration</button></div>
+                    <div class="col-12"><input type="password" class="roll-input" required placeholder="Password"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><button id="login">Login</button></div>
+                    <div class="col-12"><button >Login</button></div>
                 </div>
             </form>
         </div>
     </div>
+    <div id="ff-compose"></div>
     <script>
         let form = document.getElementById('form')
         form.addEventListener('submit', (e)=>{
             e.preventDefault();
-        })
-        document.getElementById('register').addEventListener('click', ()=>{
-            window.location.href = "/register.html";
-        })
-        document.getElementById('login').addEventListener('click', ()=>{
-            window.location.href = "/login.html";
+            window.location.href = "/dashboard.html";
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
