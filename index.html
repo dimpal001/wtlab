@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Lab Report</title>
+    
 </head>
 
 <body>
@@ -16,19 +17,26 @@
         <div class="form-box">
             <form id="form" action="">
                 <div class="row">
-                    <h3>Web Technology</h3>
-                    <h5>Lab report</h5>
+                    <h2>Cipher</h2>
+                    <h5>Registration Form</h5>
                 </div>
                 <div class="row">
-                    <div class="col-12"><input type="text" name="" class="name-input" required placeholder="Full Name"></div>
+                    <div class="col-12"><input type="text" class="name-input" required placeholder="Full Name"></div>
                 </div>
                 <div class="row">
-                    <div class="col-12"><input type="text" name="" class="roll-input" required placeholder="Roll Number"></div>
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Email"></div>
                 </div>
                 <div class="row">
-                    <div class="mb-3">
-                        <input class="form-control" name="" type="file" required id="formFile">
-                    </div>
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Roll Number"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Registration Number"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Department"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12"><input type="text" class="roll-input" required placeholder="Semester"></div>
                 </div>
                 <div class="row">
                     <div class="col-12"><button>Submit report</button></div>
@@ -36,10 +44,10 @@
             </form>
         </div>
     </div>
+    <div id="ff-compose"></div>
     <script>
         let form = document.getElementById('form')
         form.addEventListener('submit', (e)=>{
-            e.preventDefault();
 
         })
     </script>
